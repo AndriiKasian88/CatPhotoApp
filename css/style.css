@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kaushan Script"), local("KaushanScript-Regular"),
+    url("../fonts/kaushan-script-v8-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/kaushan-script-v8-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 *,
 *::before,
 *::after {
@@ -10,10 +37,10 @@ body {
   background-size: cover;
   line-height: 1.2;
 }
-ul,
+/* ul,
 li {
   list-style: none;
-}
+} */
 img {
   display: block;
   width: 100%;
@@ -40,7 +67,7 @@ header h1 {
 }
 .container {
   max-width: 1280px;
-  padding: 20px 10px;
+  padding: 20px 0px;
   background-color: #fff8dc;
   margin: 0 auto;
 }
@@ -48,12 +75,13 @@ section {
   padding-top: 40px;
   text-align: center;
 }
-section h2 {
+h2 {
+  font-family: "Montserrat";
   margin-bottom: 40px;
   font-size: 84px;
   color: #180105;
 }
-.section-box {
+.section-photo-text {
   display: flex;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -101,12 +129,14 @@ section h2 {
   opacity: 0;
   visibility: hidden;
 }
-section h3 {
+h3 {
+  font-family: "Montserrat";
   margin-bottom: 40px;
   font-size: 48px;
   color: #180105;
 }
-section p {
+p {
+  font-family: "Montserrat";
   font-size: 36px;
   color: #180105;
   padding-top: 200px;
@@ -117,8 +147,57 @@ section p {
   border-radius: 50%;
   border: 2px solid #fa0637;
 }
-.section-list {
-  padding-top: 40px;
-  text-align: center;
+.section-cat-list {
   background-color: #fff;
+  padding-bottom: 150px;
+}
+.cat-list-container {
+  display: flex;
+  justify-content: space-around;
+}
+.cat-list-item {
+  width: 600px;
+  padding: 30px 10px;
+  background-color: #fff8dc;
+  border-radius: 10px;
+}
+.cat-list-item h3 {
+  margin-bottom: 40px;
+  font-family: "Montserrat";
+  font-size: 36px;
+  color: #180105;
+}
+.list-item-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.list-item-box li {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  color: #180105;
+  margin-bottom: 10px;
+  cursor: context-menu;
+  text-align: start;
+  padding-top: 20px;
+}
+
+figure img {
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+figcaption {
+  font-family: "Kaushan Script";
+
+  font-size: 24px;
+  color: #180105;
+}
+
+figcaption em {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  color: #fa0637;
 }
