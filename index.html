@@ -1,141 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>CatPhotoApp</title>
-  </head>
-  <body>
-    <header>
-      <div class="signboard">
-        <h1>CatPhotoApp</h1>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <section class="section-photo">
-          <h2>Cat Photos</h2>
-          <div class="section-photo-text">
-            <p>
-              Click here to view more
-              <a href="https://freecatphotoapp.com" target="_blank" class="link"
-                ><span class="link-effect">cat photos</span></a
-              >
-            </p>
-            <a target="_blank" href="https://freecatphotoapp.com"
-              ><img
-                class="first-image"
-                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-                alt="A cute orange cat lying on its back."
-            /></a>
-          </div>
-        </section>
-        <section class="section-cat-list">
-          <h2>Cat Lists</h2>
-          <div class="cat-list-container">
-            <div class="cat-list-item">
-              <h3>Things cats love:</h3>
-              <div class="list-item-box">
-                <ul>
-                  <li class="link-effect">Cat nip</li>
-                  <li class="link-effect">Laser pointers</li>
-                  <li class="link-effect">Lasagna</li>
-                </ul>
-                <figure>
-                  <img
-                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-                    alt="A slice of lasagna on a plate."
-                  />
-                  <figcaption>Cats <em>love</em> lasagna.</figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="cat-list-item">
-              <h3>Top 3 things cats hate:</h3>
-              <div class="list-item-box">
-                <ul>
-                  <li>flea treatment</li>
-                  <li>thunder</li>
-                  <li>other cats</li>
-                </ul>
-                <figure>
-                  <img
-                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
-                    alt="Five cats looking around a field."
-                  />
-                  <figcaption>Cats <em>hate</em> other cats.</figcaption>
-                </figure>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>CatPhotoApp</title>
+</head>
+
+<body>
+  <header>
+    <div class="signboard">
+      <h1>CatPhotoApp</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="section-photo">
+        <h2>Cat Photos</h2>
+        <div class="section-photo-menu">
+          <p>
+            Click here to view more
+            <a href="https://freecatphotoapp.com" target="_blank" class="section-photo-menu-link"><span
+                class="link-effect">cat photos</span></a>
+          </p>
+          <a target="_blank" href="https://freecatphotoapp.com"><img class="section-photo-menu-image"
+              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+              alt="A cute orange cat lying on its back." /></a>
+        </div>
+      </section>
+      <section class="section-cat-list">
+        <h2>Cat Lists</h2>
+        <div class="cat-list-container">
+          <div class="cat-list-menu">
+            <h3>Things cats love:</h3>
+            <div class="cat-list-menu-item">
+              <ul>
+                <li class="link-effect">Cat nip</li>
+                <li class="link-effect">Laser pointers</li>
+                <li class="link-effect">Lasagna</li>
+              </ul>
+              <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                  alt="A slice of lasagna on a plate." />
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+              </figure>
             </div>
           </div>
-        </section>
-        <section>
-          <h2>Cat Form</h2>
-          <form action="https://freecatphotoapp.com/submit-cat-photo">
-            <fieldset>
-              <legend>Is your cat an indoor or outdoor cat?</legend>
-              <label
-                ><input
-                  id="indoor"
-                  type="radio"
-                  name="indoor-outdoor"
-                  value="indoor"
-                  checked
-                />
-                Indoor</label
-              >
-              <label
-                ><input
-                  id="outdoor"
-                  type="radio"
-                  name="indoor-outdoor"
-                  value="outdoor"
-                />
-                Outdoor</label
-              >
-            </fieldset>
-            <fieldset>
-              <input
-                id="loving"
-                type="checkbox"
-                name="personality"
-                value="loving"
-                checked
-              />
-              <label for="loving">Loving</label>
-              <input
-                id="lazy"
-                type="checkbox"
-                name="personality"
-                value="lazy"
-              />
-              <label for="lazy">Lazy</label>
-              <input
-                id="energetic"
-                type="checkbox"
-                name="personality"
-                value="energetic"
-              />
-              <label for="energetic"> Energetic</label>
-            </fieldset>
-            <input
-              type="text"
-              name="catphotourl"
-              placeholder="cat photo URL"
-              required
-            />
-            <button type="submit">Submit</button>
-          </form>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <p>
-        No Copyright -
-        <a href="https://www.freecodecamp.org"> freeCodeCamp.org</a>
-      </p>
-    </footer>
-  </body>
+          <div class="cat-list-menu">
+            <h3>Top 3 things cats hate:</h3>
+            <div class="cat-list-menu-item">
+              <ul>
+                <li class="link-effect">flea treatment</li>
+                <li class="link-effect">thunder</li>
+                <li class="link-effect">other cats</li>
+              </ul>
+              <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                  alt="Five cats looking around a field." />
+                <figcaption>Cats <em>hate</em> other cats.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-form">
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>
+              Is your <span>cat</span> an indoor or outdoor cat?
+            </legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked />
+              Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" />
+              Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Check the appropriate options about your
+              <span>cat</span>.
+            </legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked />
+            <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic" />
+            <label for="energetic"> Energetic</label>
+          </fieldset>
+          <input class="input-text" type="text" name="catphotourl" placeholder="cat photo URL" required />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>
+      No Copyright -
+      <a class="author-name" href="https://github.com/AndriiKasian88">
+        Author Andrii Kasian</a>
+    </p>
+  </footer>
+</body>
+
 </html>
